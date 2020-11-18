@@ -42,10 +42,9 @@ jobs:
       # Due to a limitation where concating string on "env:" is not possible.
       - name: set docker environment variables
         run:  |
-          echo  "DOCKER_IMAGE_NAME=leonardosarmentocastro/${{ env.APP_NAME }}:${{ github.sha }} >> $GITHUB_ENV"
-          echo  "DOCKER_IMAGE_NAME=leonardosarmentocastro/${{ env.APP_NAME }}:${{ github.sha }} >> $GITHUB_ENV"
-          echo  "HEROKU_DOCKER_IMAGE_NAME=registry.heroku.com/${{ env.APP_NAME }}/${{ env.APP_PROCESS_TYPE }} >> $GITHUB_ENV"
-          echo  "HEROKU_API_KEY=${{ secrets.SECRET_HEROKU_AUTHORIZATION_TOKEN }} >> $GITHUB_ENV"
+          echo  "DOCKER_IMAGE_NAME=leonardosarmentocastro/${{ env.APP_NAME }}:${{ github.sha }}" >> $GITHUB_ENV
+          echo  "HEROKU_DOCKER_IMAGE_NAME=registry.heroku.com/${{ env.APP_NAME }}/${{ env.APP_PROCESS_TYPE }}" >> $GITHUB_ENV
+          echo  "HEROKU_API_KEY=${{ secrets.SECRET_HEROKU_AUTHORIZATION_TOKEN }}" >> $GITHUB_ENV
 
       - name: checkout current branch
         uses: actions/checkout@v2
