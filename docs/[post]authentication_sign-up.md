@@ -8,7 +8,7 @@
 
 ```sh
 curl -X POST \
-http://localhost:52627/authentication/sign-up \
+http://localhost:54619/authentication/sign-up \
 -d '{
   "email": "email@domain.com",
   "username": "username123",
@@ -51,6 +51,6 @@ Headers:
 
 | Key | Value |
 | :--- | :--- |
-| authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7fSwiaWF0IjoxNTY4MDY2ODUzLCJleHAiOjE1Njg2NzE2NTMsImlzcyI6ImNyZWF0ZS1ub2RlanMtYXBwL2F1dGhlbnRpY2F0aW9uIiwic3ViIjoiNWQ3NmNkMjUyZTYzMjIzYjZkZDNmNGU2In0.PZx5hbr3NfvENQQ-mnRtTOM9Q8Wqk5PcWhq5S8oiQ88 |
+| authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7fSwiaWF0IjoxNjA1NzIxMzM5LCJleHAiOjE2MDYzMjYxMzksImlzcyI6ImNyZWF0ZS1ub2RlanMtYXBwL2F1dGhlbnRpY2F0aW9uIiwic3ViIjoiNWZiNTVjZmI4MjZiMzYxNjIzYjgwNTBkIn0.GWU3S0znRqAxSHufbMozlYPymxd_3PsfYrFrGVsRMrc |
 
 Body: _empty_

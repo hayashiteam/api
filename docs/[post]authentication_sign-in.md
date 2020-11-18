@@ -12,7 +12,7 @@
 
 ```sh
 curl -X POST \
-http://localhost:52488/authentication/sign-in \
+http://localhost:54540/authentication/sign-in \
 -d '{
   "email": "email@domain.com",
   "password": "abc123def!@#"
@@ -53,7 +53,7 @@ Headers:
 
 | Key | Value |
 | :--- | :--- |
-| authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7fSwiaWF0IjoxNTY4MDY2ODM5LCJleHAiOjE1Njg2NzE2MzksImlzcyI6ImNyZWF0ZS1ub2RlanMtYXBwL2F1dGhlbnRpY2F0aW9uIiwic3ViIjoiNWQ3NmNkMTczYWFiOTAzYjNkNGEwYzE4In0.oi-31tS8ZeAcwEX4Sc-yaRYHXyyt066A-EvSLbKoC24 |
+| authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7fSwiaWF0IjoxNjA1NzIxMzIxLCJleHAiOjE2MDYzMjYxMjEsImlzcyI6ImNyZWF0ZS1ub2RlanMtYXBwL2F1dGhlbnRpY2F0aW9uIiwic3ViIjoiNWZiNTVjZTkyMDY1ZDkxNWYzZjNiYmRmIn0.5ZSRiqwoIpl4jmvDN-nUMn6UX9jBy7klmx5AI3nxqvA |
 
 Body: _empty_
 
@@ -61,7 +61,7 @@ Body: _empty_
 
 ```sh
 curl -X POST \
-http://localhost:52488/authentication/sign-in \
+http://localhost:54540/authentication/sign-in \
 -d '{
   "password": "abc123def!@#"
 }' \
@@ -112,7 +112,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52488/authentication/sign-in \
+http://localhost:54540/authentication/sign-in \
 -d '{
   "email": "email@domain.com"
 }' \
@@ -163,9 +163,9 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52488/authentication/sign-in \
+http://localhost:54540/authentication/sign-in \
 -d '{
-  "email": "not-registered-email@domain.com",
+  "email": "not-email@domain.com",
   "password": "abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
@@ -191,7 +191,7 @@ Body:
 
 ```
 {
-  "email": "not-registered-email@domain.com",
+  "email": "not-email@domain.com",
   "password": "abc123def!@#"
 }
 ```
@@ -215,7 +215,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52488/authentication/sign-in \
+http://localhost:54540/authentication/sign-in \
 -d '{
   "email": "email@domain.com",
   "password": "not-abc123def!@#"

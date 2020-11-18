@@ -8,7 +8,7 @@
 
 ```sh
 curl -X GET \
-http://localhost:52614/health \
+http://localhost:54616/health \
 -H 'accept-language: pt-br'
 -H 'authorization: authorization-token-dev'
 ```

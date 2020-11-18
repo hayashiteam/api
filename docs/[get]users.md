@@ -9,8 +9,8 @@
 
 ```sh
 curl -X GET \
-http://localhost:52591/users?l=2&p=2 \
--H 'accept-language: pt-br'
+http://localhost:8081/users?l=2&p=2 \
+-H 'accept-language: pt-br' \
 -H 'authorization: authorization-token-dev'
 ```
 
@@ -18,14 +18,14 @@ http://localhost:52591/users?l=2&p=2 \
 
 Path: `/users`
 
-Query parameters: 
+Query parameters:
 
 | Key | Value |
 | :--- | :--- |
 | l | 2 |
 | p | 2 |
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -40,24 +40,24 @@ Status: 200
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {
   "docs": [
     {
-      "createdAt": "2019-09-09T22:07:28.903Z",
-      "updatedAt": "2019-09-09T22:07:28.903Z",
+      "createdAt": "2020-11-18T17:42:13.683Z",
+      "updatedAt": "2020-11-18T17:42:13.683Z",
       "email": "user3_email@domain.com",
       "username": "user3_username123",
-      "id": "5d76cd21011ecf3b60b2a121"
+      "id": "5fb55cf5b0ce7c1616a0c633"
     },
     {
-      "createdAt": "2019-09-09T22:07:28.903Z",
-      "updatedAt": "2019-09-09T22:07:28.903Z",
+      "createdAt": "2020-11-18T17:42:13.683Z",
+      "updatedAt": "2020-11-18T17:42:13.683Z",
       "email": "user4_email@domain.com",
       "username": "user4_username123",
-      "id": "5d76cd21011ecf3b60b2a122"
+      "id": "5fb55cf5b0ce7c1616a0c634"
     }
   ],
   "hasNextPage": false,
@@ -73,8 +73,8 @@ Body:
 
 ```sh
 curl -X GET \
-http://localhost:52591/users \
--H 'accept-language: pt-br'
+http://localhost:8081/users \
+-H 'accept-language: pt-br' \
 -H 'authorization: authorization-token-dev'
 ```
 
@@ -84,7 +84,7 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -99,7 +99,7 @@ Status: 200
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {

@@ -17,14 +17,14 @@
 
 ```sh
 curl -X POST \
-http://localhost:52573/users \
+http://localhost:8081/users \
 -d '{
   "email": "email@domain.com",
   "username": "username123",
   "password": "abc123def!@#"
 }' \
--H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'accept-language: pt-br' \
+-H 'authorization: authorization-token-dev' \
 -H 'content-type: application/json'
 ```
 
@@ -34,7 +34,7 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -42,7 +42,7 @@ Headers:
 | authorization | authorization-token-dev |
 | content-type | application/json |
 
-Body: 
+Body:
 
 ```
 {
@@ -58,15 +58,15 @@ Status: 200
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {
-  "createdAt": "2019-09-09T22:07:27.790Z",
-  "updatedAt": "2019-09-09T22:07:27.790Z",
+  "createdAt": "2020-11-18T17:42:12.144Z",
+  "updatedAt": "2020-11-18T17:42:12.144Z",
   "email": "email@domain.com",
   "username": "username123",
-  "id": "5d76cd1f07f5b83b5fbf792c"
+  "id": "5fb55cf494a06b160d7e645a"
 }
 ```
 
@@ -74,7 +74,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52573/users \
+http://localhost:54591/users \
 -d '{
   "email": "email@domain.com",
   "username": "username123",
@@ -95,7 +95,7 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -103,7 +103,7 @@ Headers:
 | authorization | authorization-token-dev |
 | content-type | application/json |
 
-Body: 
+Body:
 
 ```
 {
@@ -123,15 +123,15 @@ Status: 200
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {
-  "createdAt": "2019-09-09T22:07:27.790Z",
-  "updatedAt": "2019-09-09T22:07:27.790Z",
+  "createdAt": "2020-11-18T17:42:12.144Z",
+  "updatedAt": "2020-11-18T17:42:12.144Z",
   "email": "email@domain.com",
   "username": "username123",
-  "id": "5d76cd1f07f5b83b5fbf792d"
+  "id": "5fb55cf494a06b160d7e645b"
 }
 ```
 
@@ -139,7 +139,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52573/users \
+http://localhost:54591/users \
 -d '{
   "email": "invalid@123!!!!.com.br",
   "username": "username123",
@@ -156,7 +156,7 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -164,7 +164,7 @@ Headers:
 | authorization | authorization-token-dev |
 | content-type | application/json |
 
-Body: 
+Body:
 
 ```
 {
@@ -180,7 +180,7 @@ Status: 500
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {
@@ -194,7 +194,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52573/users \
+http://localhost:54591/users \
 -d '{
   "email": "email@domain.com",
   "username": "username123",
@@ -211,7 +211,7 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -219,7 +219,7 @@ Headers:
 | authorization | authorization-token-dev |
 | content-type | application/json |
 
-Body: 
+Body:
 
 ```
 {
@@ -235,7 +235,7 @@ Status: 500
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {
@@ -258,7 +258,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52573/users \
+http://localhost:54591/users \
 -d '{
   "email": "email@already-being-used.com",
   "username": "user2_username123",
@@ -275,7 +275,7 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -283,7 +283,7 @@ Headers:
 | authorization | authorization-token-dev |
 | content-type | application/json |
 
-Body: 
+Body:
 
 ```
 {
@@ -299,7 +299,7 @@ Status: 500
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {
@@ -313,7 +313,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52573/users \
+http://localhost:54591/users \
 -d '{
   "email": "user2_email@domain.com",
   "username": "already-being-used",
@@ -330,7 +330,7 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -338,7 +338,7 @@ Headers:
 | authorization | authorization-token-dev |
 | content-type | application/json |
 
-Body: 
+Body:
 
 ```
 {
@@ -354,7 +354,7 @@ Status: 500
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {
@@ -368,7 +368,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52573/users \
+http://localhost:54591/users \
 -d '{
   "email": "",
   "username": "username123",
@@ -385,7 +385,7 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -393,7 +393,7 @@ Headers:
 | authorization | authorization-token-dev |
 | content-type | application/json |
 
-Body: 
+Body:
 
 ```
 {
@@ -409,7 +409,7 @@ Status: 500
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {
@@ -423,7 +423,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52573/users \
+http://localhost:54591/users \
 -d '{
   "email": "email@domain.com",
   "username": "",
@@ -440,7 +440,7 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -448,7 +448,7 @@ Headers:
 | authorization | authorization-token-dev |
 | content-type | application/json |
 
-Body: 
+Body:
 
 ```
 {
@@ -464,7 +464,7 @@ Status: 500
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {
@@ -478,7 +478,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52573/users \
+http://localhost:54591/users \
 -d '{
   "email": "email@domain.com",
   "username": "username123",
@@ -495,7 +495,7 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -503,7 +503,7 @@ Headers:
 | authorization | authorization-token-dev |
 | content-type | application/json |
 
-Body: 
+Body:
 
 ```
 {
@@ -519,7 +519,7 @@ Status: 500
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {
@@ -533,7 +533,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:52573/users \
+http://localhost:54591/users \
 -d '{
   "email": "email@domain.com",
   "username": "aaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -550,7 +550,7 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers: 
+Headers:
 
 | Key | Value |
 | :--- | :--- |
@@ -558,7 +558,7 @@ Headers:
 | authorization | authorization-token-dev |
 | content-type | application/json |
 
-Body: 
+Body:
 
 ```
 {
@@ -574,7 +574,7 @@ Status: 500
 
 Headers: _empty_
 
-Body: 
+Body:
 
 ```
 {
