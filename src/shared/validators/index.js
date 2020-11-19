@@ -4,6 +4,7 @@
 // how error handling show be addressed an reused on modules.
 module.exports = {
   ...require('./is-already-in-use-validator'),
+  ...require('./is-matching-regex'),
   ...require('./is-required-validator'),
   ...require('./is-too-long-validator'),
   ...require('./is-valid-email-validator'),

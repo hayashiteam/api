@@ -1,22 +1,22 @@
-# [get] /users
+# [get] /black-november
 
-* [(200) must return paginated content if there are users from database](#425b501c40)
-* [(200) must return an empty array if there are no users on database](#fa7384a410)
+* [(200) must return paginated content if there are "black november users" from database](#2ee29b0262)
+* [(200) must return an empty array if there are no "black november users" on database](#85c3f0070d)
 
 ---
 
-### :chicken: `(200) must return paginated content if there are users from database` <a name="425b501c40"></a>
+### :chicken: `(200) must return paginated content if there are "black november users" from database` <a name="2ee29b0262"></a>
 
 ```sh
 curl -X GET \
-http://localhost:54206/users?l=2&p=2 \
+http://localhost:54261/black-november?l=2&p=2 \
 -H 'accept-language: pt-br'
 -H 'authorization: authorization-token-test'
 ```
 
 **Request** :egg:
 
-Path: `/users`
+Path: `/black-november`
 
 Query parameters: 
 
@@ -46,18 +46,18 @@ Body:
 {
   "docs": [
     {
-      "createdAt": "2020-11-19T04:23:48.586Z",
-      "updatedAt": "2020-11-19T04:23:48.586Z",
-      "email": "user3_email@domain.com",
-      "username": "user3_username123",
-      "id": "5fb5f3546b7698684083a273"
+      "createdAt": "2020-11-19T04:23:54.415Z",
+      "updatedAt": "2020-11-19T04:23:54.415Z",
+      "firstName": "Carlos",
+      "cellphone": "(12) 33333-2222",
+      "id": "5fb5f35ab6d041684e47739a"
     },
     {
-      "createdAt": "2020-11-19T04:23:48.586Z",
-      "updatedAt": "2020-11-19T04:23:48.586Z",
-      "email": "user4_email@domain.com",
-      "username": "user4_username123",
-      "id": "5fb5f3546b7698684083a274"
+      "createdAt": "2020-11-19T04:23:54.415Z",
+      "updatedAt": "2020-11-19T04:23:54.415Z",
+      "firstName": "Felipe",
+      "cellphone": "(12) 11111-5555",
+      "id": "5fb5f35ab6d041684e47739b"
     }
   ],
   "hasNextPage": false,
@@ -69,18 +69,18 @@ Body:
 }
 ```
 
-### :chicken: `(200) must return an empty array if there are no users on database` <a name="fa7384a410"></a>
+### :chicken: `(200) must return an empty array if there are no "black november users" on database` <a name="85c3f0070d"></a>
 
 ```sh
 curl -X GET \
-http://localhost:54206/users \
+http://localhost:54261/black-november \
 -H 'accept-language: pt-br'
 -H 'authorization: authorization-token-test'
 ```
 
 **Request** :egg:
 
-Path: `/users`
+Path: `/black-november`
 
 Query parameters: _empty_
 

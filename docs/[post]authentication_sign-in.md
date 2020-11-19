@@ -12,13 +12,13 @@
 
 ```sh
 curl -X POST \
-http://localhost:54540/authentication/sign-in \
+http://localhost:54109/authentication/sign-in \
 -d '{
   "email": "email@domain.com",
   "password": "abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -33,7 +33,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -53,7 +53,7 @@ Headers:
 
 | Key | Value |
 | :--- | :--- |
-| authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7fSwiaWF0IjoxNjA1NzIxMzIxLCJleHAiOjE2MDYzMjYxMjEsImlzcyI6ImNyZWF0ZS1ub2RlanMtYXBwL2F1dGhlbnRpY2F0aW9uIiwic3ViIjoiNWZiNTVjZTkyMDY1ZDkxNWYzZjNiYmRmIn0.5ZSRiqwoIpl4jmvDN-nUMn6UX9jBy7klmx5AI3nxqvA |
+| authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7fSwiaWF0IjoxNjA1NzU5ODE3LCJleHAiOjE2MDYzNjQ2MTcsImlzcyI6ImNyZWF0ZS1ub2RlanMtYXBwL2F1dGhlbnRpY2F0aW9uIiwic3ViIjoiNWZiNWYzNDk4YTdiZDM2ODJhYjk5MDVlIn0.dbRHp0yksL3G0PlfeyDpEiiliyVvEWpRV12v4YxzJwI |
 
 Body: _empty_
 
@@ -61,12 +61,12 @@ Body: _empty_
 
 ```sh
 curl -X POST \
-http://localhost:54540/authentication/sign-in \
+http://localhost:54109/authentication/sign-in \
 -d '{
   "password": "abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -81,7 +81,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -112,12 +112,12 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54540/authentication/sign-in \
+http://localhost:54109/authentication/sign-in \
 -d '{
   "email": "email@domain.com"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -132,7 +132,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -163,13 +163,13 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54540/authentication/sign-in \
+http://localhost:54109/authentication/sign-in \
 -d '{
   "email": "not-email@domain.com",
   "password": "abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -184,7 +184,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -215,13 +215,13 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54540/authentication/sign-in \
+http://localhost:54109/authentication/sign-in \
 -d '{
   "email": "email@domain.com",
   "password": "not-abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -236,7 +236,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 

@@ -17,14 +17,14 @@
 
 ```sh
 curl -X POST \
-http://localhost:8081/users \
+http://localhost:54190/users \
 -d '{
   "email": "email@domain.com",
   "username": "username123",
   "password": "abc123def!@#"
 }' \
--H 'accept-language: pt-br' \
--H 'authorization: authorization-token-dev' \
+-H 'accept-language: pt-br'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -34,15 +34,15 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers:
+Headers: 
 
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
-Body:
+Body: 
 
 ```
 {
@@ -58,15 +58,15 @@ Status: 200
 
 Headers: _empty_
 
-Body:
+Body: 
 
 ```
 {
-  "createdAt": "2020-11-18T17:42:12.144Z",
-  "updatedAt": "2020-11-18T17:42:12.144Z",
+  "createdAt": "2020-11-19T04:23:47.347Z",
+  "updatedAt": "2020-11-19T04:23:47.347Z",
   "email": "email@domain.com",
   "username": "username123",
-  "id": "5fb55cf494a06b160d7e645a"
+  "id": "5fb5f353b2eb446837959f2a"
 }
 ```
 
@@ -74,7 +74,7 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54591/users \
+http://localhost:54190/users \
 -d '{
   "email": "email@domain.com",
   "username": "username123",
@@ -85,7 +85,7 @@ http://localhost:54591/users \
   "updatedAt": "value"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -95,15 +95,15 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers:
+Headers: 
 
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
-Body:
+Body: 
 
 ```
 {
@@ -123,15 +123,15 @@ Status: 200
 
 Headers: _empty_
 
-Body:
+Body: 
 
 ```
 {
-  "createdAt": "2020-11-18T17:42:12.144Z",
-  "updatedAt": "2020-11-18T17:42:12.144Z",
+  "createdAt": "2020-11-19T04:23:47.347Z",
+  "updatedAt": "2020-11-19T04:23:47.347Z",
   "email": "email@domain.com",
   "username": "username123",
-  "id": "5fb55cf494a06b160d7e645b"
+  "id": "5fb5f353b2eb446837959f2b"
 }
 ```
 
@@ -139,14 +139,14 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54591/users \
+http://localhost:54190/users \
 -d '{
   "email": "invalid@123!!!!.com.br",
   "username": "username123",
   "password": "abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -156,15 +156,15 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers:
+Headers: 
 
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
-Body:
+Body: 
 
 ```
 {
@@ -180,7 +180,7 @@ Status: 500
 
 Headers: _empty_
 
-Body:
+Body: 
 
 ```
 {
@@ -194,14 +194,14 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54591/users \
+http://localhost:54190/users \
 -d '{
   "email": "email@domain.com",
   "username": "username123",
   "password": "123456789"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -211,15 +211,15 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers:
+Headers: 
 
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
-Body:
+Body: 
 
 ```
 {
@@ -235,7 +235,7 @@ Status: 500
 
 Headers: _empty_
 
-Body:
+Body: 
 
 ```
 {
@@ -258,14 +258,14 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54591/users \
+http://localhost:54190/users \
 -d '{
   "email": "email@already-being-used.com",
   "username": "user2_username123",
   "password": "user2_abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -275,15 +275,15 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers:
+Headers: 
 
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
-Body:
+Body: 
 
 ```
 {
@@ -299,7 +299,7 @@ Status: 500
 
 Headers: _empty_
 
-Body:
+Body: 
 
 ```
 {
@@ -313,14 +313,14 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54591/users \
+http://localhost:54190/users \
 -d '{
   "email": "user2_email@domain.com",
   "username": "already-being-used",
   "password": "user2_abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -330,15 +330,15 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers:
+Headers: 
 
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
-Body:
+Body: 
 
 ```
 {
@@ -354,7 +354,7 @@ Status: 500
 
 Headers: _empty_
 
-Body:
+Body: 
 
 ```
 {
@@ -368,14 +368,14 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54591/users \
+http://localhost:54190/users \
 -d '{
   "email": "",
   "username": "username123",
   "password": "abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -385,15 +385,15 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers:
+Headers: 
 
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
-Body:
+Body: 
 
 ```
 {
@@ -409,7 +409,7 @@ Status: 500
 
 Headers: _empty_
 
-Body:
+Body: 
 
 ```
 {
@@ -423,14 +423,14 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54591/users \
+http://localhost:54190/users \
 -d '{
   "email": "email@domain.com",
   "username": "",
   "password": "abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -440,15 +440,15 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers:
+Headers: 
 
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
-Body:
+Body: 
 
 ```
 {
@@ -464,7 +464,7 @@ Status: 500
 
 Headers: _empty_
 
-Body:
+Body: 
 
 ```
 {
@@ -478,14 +478,14 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54591/users \
+http://localhost:54190/users \
 -d '{
   "email": "email@domain.com",
   "username": "username123",
   "password": ""
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -495,15 +495,15 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers:
+Headers: 
 
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
-Body:
+Body: 
 
 ```
 {
@@ -519,7 +519,7 @@ Status: 500
 
 Headers: _empty_
 
-Body:
+Body: 
 
 ```
 {
@@ -533,14 +533,14 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:54591/users \
+http://localhost:54190/users \
 -d '{
   "email": "email@domain.com",
   "username": "aaaaaaaaaaaaaaaaaaaaaaaaa",
   "password": "abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
@@ -550,15 +550,15 @@ Path: `/users`
 
 Query parameters: _empty_
 
-Headers:
+Headers: 
 
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
-Body:
+Body: 
 
 ```
 {
@@ -574,7 +574,7 @@ Status: 500
 
 Headers: _empty_
 
-Body:
+Body: 
 
 ```
 {

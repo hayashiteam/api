@@ -21,18 +21,18 @@
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55ceddc7bc116012a0a15 \
+http://localhost:54154/users/5fb5f34d00d23f682e5f8b7d \
 -d '{
   "email": "new-email@domain.com"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55ceddc7bc116012a0a15`
+Path: `/users/5fb5f34d00d23f682e5f8b7d`
 
 Query parameters: _empty_
 
@@ -41,7 +41,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -62,11 +62,11 @@ Body:
 
 ```
 {
-  "createdAt": "2020-11-18T17:42:05.735Z",
-  "updatedAt": "2020-11-18T17:42:06.447Z",
+  "createdAt": "2020-11-19T04:23:41.765Z",
+  "updatedAt": "2020-11-19T04:23:42.888Z",
   "email": "new-email@domain.com",
   "username": "username123",
-  "id": "5fb55ceddc7bc116012a0a15"
+  "id": "5fb5f34d00d23f682e5f8b7d"
 }
 ```
 
@@ -74,18 +74,18 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55ceedc7bc116012a0a16 \
+http://localhost:54154/users/5fb5f34e00d23f682e5f8b7e \
 -d '{
   "username": "new-username"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55ceedc7bc116012a0a16`
+Path: `/users/5fb5f34e00d23f682e5f8b7e`
 
 Query parameters: _empty_
 
@@ -94,7 +94,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -115,11 +115,11 @@ Body:
 
 ```
 {
-  "createdAt": "2020-11-18T17:42:05.735Z",
-  "updatedAt": "2020-11-18T17:42:06.892Z",
+  "createdAt": "2020-11-19T04:23:41.765Z",
+  "updatedAt": "2020-11-19T04:23:43.381Z",
   "email": "email@domain.com",
   "username": "new-username",
-  "id": "5fb55ceedc7bc116012a0a16"
+  "id": "5fb5f34e00d23f682e5f8b7e"
 }
 ```
 
@@ -127,18 +127,18 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55ceedc7bc116012a0a17 \
+http://localhost:54154/users/5fb5f34f00d23f682e5f8b7f \
 -d '{
   "password": "abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55ceedc7bc116012a0a17`
+Path: `/users/5fb5f34f00d23f682e5f8b7f`
 
 Query parameters: _empty_
 
@@ -147,7 +147,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -168,11 +168,11 @@ Body:
 
 ```
 {
-  "createdAt": "2020-11-18T17:42:05.735Z",
-  "updatedAt": "2020-11-18T17:42:06.997Z",
+  "createdAt": "2020-11-19T04:23:41.765Z",
+  "updatedAt": "2020-11-19T04:23:43.436Z",
   "email": "email@domain.com",
   "username": "username123",
-  "id": "5fb55ceedc7bc116012a0a17"
+  "id": "5fb5f34f00d23f682e5f8b7f"
 }
 ```
 
@@ -180,19 +180,19 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55cefdc7bc116012a0a18 \
+http://localhost:54154/users/5fb5f34f00d23f682e5f8b80 \
 -d '{
   "email": "email@domain.com",
   "username": "username123"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55cefdc7bc116012a0a18`
+Path: `/users/5fb5f34f00d23f682e5f8b80`
 
 Query parameters: _empty_
 
@@ -201,7 +201,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -223,11 +223,11 @@ Body:
 
 ```
 {
-  "createdAt": "2020-11-18T17:42:05.735Z",
-  "updatedAt": "2020-11-18T17:42:07.480Z",
+  "createdAt": "2020-11-19T04:23:41.765Z",
+  "updatedAt": "2020-11-19T04:23:44.216Z",
   "email": "email@domain.com",
   "username": "username123",
-  "id": "5fb55cefdc7bc116012a0a18"
+  "id": "5fb5f34f00d23f682e5f8b80"
 }
 ```
 
@@ -235,7 +235,7 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55cefdc7bc116012a0a19 \
+http://localhost:54154/users/5fb5f35000d23f682e5f8b81 \
 -d '{
   "id": "value",
   "_id": "value",
@@ -243,13 +243,13 @@ http://localhost:54569/users/5fb55cefdc7bc116012a0a19 \
   "updatedAt": "value"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55cefdc7bc116012a0a19`
+Path: `/users/5fb5f35000d23f682e5f8b81`
 
 Query parameters: _empty_
 
@@ -258,7 +258,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -282,11 +282,11 @@ Body:
 
 ```
 {
-  "createdAt": "2020-11-18T17:42:05.735Z",
-  "updatedAt": "2020-11-18T17:42:07.880Z",
+  "createdAt": "2020-11-19T04:23:41.765Z",
+  "updatedAt": "2020-11-19T04:23:44.597Z",
   "email": "email@domain.com",
   "username": "username123",
-  "id": "5fb55cefdc7bc116012a0a19"
+  "id": "5fb5f35000d23f682e5f8b81"
 }
 ```
 
@@ -294,18 +294,18 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55cefdc7bc116012a0a1a \
+http://localhost:54154/users/5fb5f35000d23f682e5f8b82 \
 -d '{
   "email": "invalid@123!!!!.com.br"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55cefdc7bc116012a0a1a`
+Path: `/users/5fb5f35000d23f682e5f8b82`
 
 Query parameters: _empty_
 
@@ -314,7 +314,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -345,18 +345,18 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55cf0dc7bc116012a0a1b \
+http://localhost:54154/users/5fb5f35000d23f682e5f8b83 \
 -d '{
   "password": "123456789"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55cf0dc7bc116012a0a1b`
+Path: `/users/5fb5f35000d23f682e5f8b83`
 
 Query parameters: _empty_
 
@@ -365,7 +365,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -405,14 +405,14 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55cf0dc7bc116012a0a1d \
+http://localhost:54154/users/5fb5f35100d23f682e5f8b85 \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55cf0dc7bc116012a0a1d`
+Path: `/users/5fb5f35100d23f682e5f8b85`
 
 Query parameters: _empty_
 
@@ -421,7 +421,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 
 Body: _empty_
 
@@ -437,7 +437,7 @@ Body:
 {
   "code": "USERS_ERROR_USER_NOT_FOUND",
   "field": "id",
-  "message": "Usuário \"5fb55cf0dc7bc116012a0a1d\" não encontrado."
+  "message": "Usuário \"5fb5f35100d23f682e5f8b85\" não encontrado."
 }
 ```
 
@@ -445,20 +445,20 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55cf0dc7bc116012a0a1e \
+http://localhost:54154/users/5fb5f35100d23f682e5f8b86 \
 -d '{
   "email": "email@already-being-used.com",
   "username": "user2_username123",
   "password": "user2_abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55cf0dc7bc116012a0a1e`
+Path: `/users/5fb5f35100d23f682e5f8b86`
 
 Query parameters: _empty_
 
@@ -467,7 +467,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -500,20 +500,20 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55cf1dc7bc116012a0a20 \
+http://localhost:54154/users/5fb5f35100d23f682e5f8b88 \
 -d '{
   "email": "user2_email@domain.com",
   "username": "already-being-used",
   "password": "user2_abc123def!@#"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55cf1dc7bc116012a0a20`
+Path: `/users/5fb5f35100d23f682e5f8b88`
 
 Query parameters: _empty_
 
@@ -522,7 +522,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -555,18 +555,18 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55cf1dc7bc116012a0a22 \
+http://localhost:54154/users/5fb5f35100d23f682e5f8b8a \
 -d '{
   "email": ""
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55cf1dc7bc116012a0a22`
+Path: `/users/5fb5f35100d23f682e5f8b8a`
 
 Query parameters: _empty_
 
@@ -575,7 +575,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -606,18 +606,18 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55cf1dc7bc116012a0a23 \
+http://localhost:54154/users/5fb5f35100d23f682e5f8b8b \
 -d '{
   "username": ""
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55cf1dc7bc116012a0a23`
+Path: `/users/5fb5f35100d23f682e5f8b8b`
 
 Query parameters: _empty_
 
@@ -626,7 +626,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -657,18 +657,18 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55cf2dc7bc116012a0a24 \
+http://localhost:54154/users/5fb5f35200d23f682e5f8b8c \
 -d '{
   "password": ""
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55cf2dc7bc116012a0a24`
+Path: `/users/5fb5f35200d23f682e5f8b8c`
 
 Query parameters: _empty_
 
@@ -677,7 +677,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
@@ -708,18 +708,18 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:54569/users/5fb55cf2dc7bc116012a0a25 \
+http://localhost:54154/users/5fb5f35200d23f682e5f8b8d \
 -d '{
   "username": "aaaaaaaaaaaaaaaaaaaaaaaaa"
 }' \
 -H 'accept-language: pt-br'
--H 'authorization: authorization-token-dev'
+-H 'authorization: authorization-token-test'
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/users/5fb55cf2dc7bc116012a0a25`
+Path: `/users/5fb5f35200d23f682e5f8b8d`
 
 Query parameters: _empty_
 
@@ -728,7 +728,7 @@ Headers:
 | Key | Value |
 | :--- | :--- |
 | accept-language | pt-br |
-| authorization | authorization-token-dev |
+| authorization | authorization-token-test |
 | content-type | application/json |
 
 Body: 
