@@ -19,6 +19,10 @@ const $middlewares = (app) => ({
     // NOTE: must come first to fill "req.locale" for all subsequent middlewares.
     i18n.connect(app);
   },
+  bodyParser() {
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({ extended: false }));
+  },
   authorization() {
     const allowedRoutes = [
       { method: 'get', url: '/users/me' },
@@ -31,10 +35,6 @@ const $middlewares = (app) => ({
   //   const { authenticationMiddleware } = modules.authentication;
   //   app.use(authenticationMiddleware);
   // },
-  bodyParser() {
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({ extended: false }));
-  },
   cors() {
     app.use(cors());
   },

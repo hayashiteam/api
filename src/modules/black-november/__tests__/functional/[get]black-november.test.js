@@ -9,8 +9,7 @@ const {
   startApiOnRandomPort
 } = require('../../../../__helpers__');
 const { BlackNovemberModel } = require('../../model');
-const { validPrefixedBlackNovemberFixture, validBlackNovemberFixtures } = require('../__fixtures__');
-const validBlackNovemberFixture = require('../__fixtures__/valid-black-november-fixture');
+const { validBlackNovemberFixtures } = require('../__fixtures__');
 
 // Setup
 test.before('prepare: start api / connect to database', async t => {
